@@ -118,7 +118,7 @@ public class userTest extends JerseyTest {
                 .get();
         assertEquals("should return status 200", 200, response2.getStatus());
 //  assertNotNull("Should return user list", response2.getEntity().toString());
-        System.out.println(response2.getStatus());
+        System.out.println(response2.getStatus());//
 
         //----------------<<<<<<<<<<<<<<< NE MARCHE PAS !!!!!!!!!!!!!
         /*

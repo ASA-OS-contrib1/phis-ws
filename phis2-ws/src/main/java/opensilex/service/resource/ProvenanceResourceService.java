@@ -134,6 +134,10 @@ public class ProvenanceResourceService extends ResourceService {
             } else if (result.getHttpStatus().equals(Response.Status.BAD_REQUEST)
                     || result.getHttpStatus().equals(Response.Status.OK)
                     || result.getHttpStatus().equals(Response.Status.INTERNAL_SERVER_ERROR)) {
+                System.out.println("------DEBUG >>>>opensilex.service.resource.ProvenanceResourceService.post()");
+                String errorMsg = result.getErrorMsg();
+                System.out.println(errorMsg);
+                System.out.println("------<<<<<<opensilex.service.resource.ProvenanceResourceService.post()");
                 postResponse = new ResponseFormPOST(result.statusList);
             }
             return Response.status(result.getHttpStatus()).entity(postResponse).build();

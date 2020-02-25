@@ -761,7 +761,7 @@ public class OpenSilexWSITest extends InternalProviderIntegrationTestHelper {
         postTestCaseTrace(nameofCurrMethod);
 
     }
-    /*
+    
     @Test
     public void _6_01_provenance_01_POST_ITest() {
 
@@ -960,7 +960,7 @@ public class OpenSilexWSITest extends InternalProviderIntegrationTestHelper {
         postTestCaseTrace(nameofCurrMethod);
 
     }
-    */
+    
 
 }
 

@@ -500,7 +500,7 @@ public class OpenSilexWSITest extends InternalProviderIntegrationTestHelper {
         Experiment exp = (Experiment) usersList.get(0);
         String uriExp = exp.getUri();
 
-        assertTrue("URI of returned experiment should be the same as the one returned when it was created", StringUtils.equalsIgnoreCase(uriExp, itExperimentURI));
+        assertFalse("URI of returned experiment should be the same as the one returned when it was created", StringUtils.equalsIgnoreCase(uriExp, itExperimentURI));
 
         postTestCaseTrace(nameofCurrMethod);
 

@@ -399,7 +399,7 @@ public class OpenSilexWSITest extends InternalProviderIntegrationTestHelper {
         Project proj = (Project) usersList.get(0);
         String uriProj = proj.getUri();
 
-        assertFalse("URI of returned project should be the same as the one returned when it was created", StringUtils.equalsIgnoreCase(uriProj, itProjectURI));// SHOULD FAIL ITESTS
+        assertFalse("URI of returned project should be the same as the one returned when it was created", StringUtils.equalsIgnoreCase(uriProj, itProjectURI));// SHOULD FAIL ITESTS ++ triggerITEST
 
         postTestCaseTrace(nameofCurrMethod);
 

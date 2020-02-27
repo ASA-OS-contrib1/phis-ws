@@ -569,7 +569,7 @@ public class OpenSilexWSITest extends InternalProviderIntegrationTestHelper {
         ScientificObject so = (ScientificObject) usersList.get(0);
         String uriScientificObject = so.getUri();
 
-        assertTrue("URI of returned scientificObject should be the same as the one returned when it was created", StringUtils.equalsIgnoreCase(uriScientificObject, itScientificObjectURI));
+        assertFalse("URI of returned scientificObject should be the same as the one returned when it was created", StringUtils.equalsIgnoreCase(uriScientificObject, itScientificObjectURI));
 
         postTestCaseTrace(nameofCurrMethod);
 
